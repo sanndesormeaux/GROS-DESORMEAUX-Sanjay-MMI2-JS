@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        function convertpdkg(){
+            var pound = document.getElementById('pdkg').value;
+            var result = pound*0.45359237;
+            document.getElementById('resultpdkg').innerHTML = result;
+        }
+
+        function convertkgpd(){
+            var kilo = document.getElementById('kgpd').value;
+            var result = kilo/0.45359237;
+            document.getElementById('resultkgpd').innerHTML = result;
+        }
+
+
+    </script>
+</head>
+<body>
+
+        Pound en Kg : <input id="pdkg" type="text">  <button onclick="convertpdkg()">go</button>   => <span id="resultpdkg" type="text"></span>  <br>
+        Poid en pound : <input id="kgpd" type="text">  <button onclick="convertkgpd()">go</button>   => <span id="resultkgpd" type="text"></span>  <br> 
+
+        
+
+
+
+    
+</body>
+</html>

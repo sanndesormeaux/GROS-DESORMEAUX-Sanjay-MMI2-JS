@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+
+
+        function diviser(a,b,c){
+
+            var x = a - b; 
+            var y = x % c;
+            document.getElementById('nombre').innerHTML = y;
+        
+    }
+
+    </script>
+</head>
+<body>
+
+        <button onclick="diviser(50,30,5)">calculer</button><br>
+
+        
+        Résultat : <span id="nombre" type="text"></span>
+
+
+    
+</body>
+</html>

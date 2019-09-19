@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        var phrase ="";
+
+        function words(){
+            var mot = document.getElementById('champ').value;
+
+            phrase = phrase + " " +  mot ;
+            
+            document.getElementById('sentence').innerHTML = phrase;
+                 
+         }
+
+         function reset(){
+            var reset = "";
+            document.getElementById('sentence').innerHTML = reset;
+         }
+
+         function cote(){
+            coote = Math.floor(Math.random() * (20 - 0.5) + 0.5);
+            document.getElementById('cote').innerHTML = coote;
+         }
+
+         function calcul(){
+             var mise = document.getElementById('montant').value;
+             var resultat = mise * coote;
+             document.getElementById('sentence').innerHTML = resultat; 
+
+         }
+
+
+    </script>
+</head>
+<body>
+        <br><br>
+        Mise :  <input id="montant" type="text" >  <button onclick="calcul()" type="reset">Calcul</button> <br>
+        <button onclick="cote()">Cote</button> <br><br>
+
+        Cote  : <span id="cote" type="text"></span>
+        Bénéfices :  <span id="sentence" type="text"></span>
+
+        
+
+
+
+    
+</body>
+</html>

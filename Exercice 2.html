@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    var result = nb_1 % nb_2;
+    console.log(result);
+
+
+    function Saisir(){
+        var chp1 = document.getElementById('input1').value;
+        var chp2 = document.getElementById('input2').value;
+        var resultat = eval(chp1 * chp2);
+        document.getElementById('result-test').innerHTML = resultat;
+    }
+
+    </script>
+    
+</head>
+<body>
+
+      
+      <input id="input1" placeholder="champ input" type="text"/>
+      <input id="input2" placeholder="champ input" type="text"/>
+      
+      <button onclick="Saisir()">Calcul</button>
+      
+      Resultat : <span id="result-test"></span>
+    
+</body>
+</html>

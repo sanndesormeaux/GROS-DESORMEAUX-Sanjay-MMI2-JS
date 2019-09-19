@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+
+         function kmtotime(){
+             var d = document.getElementById('kilometres').value;
+             var t = d/1000;
+             var h = t.toFixed();
+             var min = ((t-h)*60).toFixed();
+             var duree = h +"h"+min+"min";
+             document.getElementById('resultkm').innerHTML = duree;
+
+         }
+
+
+    </script>
+</head>
+<body>
+        <br><br>
+     Distance en Km : <input id="kilometres" type="text">. 
+
+     <button onclick="kmtotime()">Calcul</button> <br> 
+
+     Le temps de trajet sera de <span id="resultkm" type="text"></span>
+
+        
+
+
+
+    
+</body>
+</html>

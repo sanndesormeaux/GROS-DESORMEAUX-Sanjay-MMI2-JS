@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+    var valeur = 0;
+    var modif = 0;
+
+        function plusdix(){
+            valeur += 10;
+
+            document.getElementById('nombre').innerHTML = valeur;
+        }
+
+        function parcinq(){
+            valeur /= 5;
+            
+            document.getElementById('nombre').innerHTML = valeur;
+        }
+
+        function foishuit(){
+            valeur *= 8;
+            
+            document.getElementById('nombre').innerHTML = valeur;
+        }
+
+        function moinsdeux(){
+            valeur -= 2;
+            
+            document.getElementById('nombre').innerHTML = valeur;
+        }
+
+        function plusdixmoinsdeux(){
+            plusdix();
+            moinsdeux(); 
+
+        }
+
+        function reset(){
+            valeur = 0
+            document.getElementById('nombre').innerHTML = valeur;
+        }
+
+
+       
+
+    </script>
+</head>
+<body >
+
+        <button onclick="plusdix()">+10</button><br>
+        <button onclick="parcinq()">/5</button><br>
+        <button onclick="foishuit()">x8</button><br>
+        <button onclick="moinsdeux()">-2</button><br>
+        <button onclick="plusdixmoinsdeux()">+10 - 2</button><br>
+        <button onclick="reset()">reset</button><br>
+
+        
+        Valeur : <span id="nombre" type="text"></span>
+
+
+    
+</body>
+</html>

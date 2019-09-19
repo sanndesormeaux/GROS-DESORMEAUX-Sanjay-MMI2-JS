@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        var phrase ="";
+
+        function words(){
+            var mot = document.getElementById('champ').value;
+
+            phrase = phrase + " " +  mot ;
+            
+            document.getElementById('sentence').innerHTML = phrase;
+                 
+         }
+
+         function reset(){
+            var reset = "";
+            document.getElementById('sentence').innerHTML = reset;
+         }
+
+
+    </script>
+</head>
+<body>
+        <br><br>
+        <input id="champ" type="text" >  <button onclick="words()" type="reset">Ajouter</button>  <button onclick="reset()">Réinitialiser</button> <br><br>
+        Phrase : <span id="sentence" type="text"></span>
+
+        
+
+
+
+    
+</body>
+</html>
